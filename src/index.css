@@ -1,2 +1,20 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+.fugaz{
+  font-family: "Fugaz One", sans-serif;
+}
+.dotmatrix{
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0
+
+}

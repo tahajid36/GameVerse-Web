@@ -1,0 +1,163 @@
+[
+    {
+      "id": "1",
+      "title": "Call of Duty: Modern Warfare III",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/MWIII_Cover_Art.png/250px-MWIII_Cover_Art.png",
+      "category": "FPS",
+      "downloadLink": "https://www.callofduty.com/modernwarfare3",
+      "description": "The latest in the iconic Call of Duty franchise, offering high-octane first-person combat, cinematic storytelling, and expansive multiplayer modes.",
+      "ratings": "4.6",
+      "developer": "Infinity Ward"
+    },
+    {
+      "id": "2",
+      "title": "Battlefield 2042",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Battlefield_2042_cover_art.jpg/250px-Battlefield_2042_cover_art.jpg",
+      "category": "FPS",
+      "downloadLink": "https://www.ea.com/games/battlefield/battlefield-2042",
+      "description": "A massive-scale, futuristic warfare FPS with large maps, destructible environments, and dynamic weather systems.",
+      "ratings": "4.1",
+      "developer": "DICE"
+    },
+    {
+      "id": "3",
+      "title": "Counter-Strike 2",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/250px-CS2_Cover_Art.jpg",
+      "category": "FPS",
+      "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+      "description": "The evolution of the world’s most competitive tactical shooter, featuring updated Source 2 engine visuals and physics.",
+      "ratings": "4.7",
+      "developer": "Valve"
+    },
+    {
+      "id": "4",
+      "title": "Cyberpunk 2077",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+      "category": "Action RPG",
+      "downloadLink": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+      "description": "An open-world action RPG set in a futuristic city full of life, crime, and corporate warfare, where your choices shape the story.",
+      "ratings": "4.5",
+      "developer": "CD Projekt Red"
+    },
+    {
+      "id": "5",
+      "title": "DOOM Eternal",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Cover_Art_of_Doom_Eternal.png/250px-Cover_Art_of_Doom_Eternal.png",
+      "category": "FPS",
+      "downloadLink": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+      "description": "An intense, fast-paced shooter that puts players in control of the Doom Slayer to battle demons across hellish landscapes.",
+      "ratings": "4.8",
+      "developer": "id Software"
+    },
+    {
+      "id": "6",
+      "title": "Apex Legends",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
+      "category": "FPS Battle Royale",
+      "downloadLink": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+      "description": "A hero-based battle royale shooter set in the Titanfall universe, featuring unique characters, teamwork, and fluid movement.",
+      "ratings": "4.6",
+      "developer": "Respawn Entertainment"
+    },
+    {
+      "id": "7",
+      "title": "Rainbow Six Siege",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg/250px-Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg",
+      "category": "Tactical FPS",
+      "downloadLink": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+      "description": "A tactical shooter focusing on strategy, team play, and destruction-based gameplay where every wall can be a potential breach point.",
+      "ratings": "4.4",
+      "developer": "Ubisoft"
+    },
+    {
+      "id": "8",
+      "title": "Escape from Tarkov",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Escape_from_Tarkov.jpg/250px-Escape_from_Tarkov.jpg",
+      "category": "Hardcore FPS",
+      "downloadLink": "https://www.escapefromtarkov.com/",
+      "description": "A hardcore and realistic online FPS with survival elements and deep weapon customization set in a fictional war-torn region.",
+      "ratings": "4.3",
+      "developer": "Battlestate Games"
+    },
+    {
+      "id": "9",
+      "title": "Red Dead Redemption 2",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+      "category": "Action Adventure",
+      "downloadLink": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+      "description": "An epic Western tale of loyalty and survival with stunning visuals and one of the richest open worlds ever made.",
+      "ratings": "4.9",
+      "developer": "Rockstar Games"
+    },
+    {
+      "id": "10",
+      "title": "Elden Ring",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+      "category": "Action RPG",
+      "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+      "description": "A vast open-world RPG from the creators of Dark Souls, blending exploration, combat, and lore in a mysterious fantasy world.",
+      "ratings": "4.9",
+      "developer": "FromSoftware"
+    },
+    {
+      "id": "11",
+      "title": "Overwatch 2",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Overwatch_2_Steam_artwork.jpg/250px-Overwatch_2_Steam_artwork.jpg",
+      "category": "Hero Shooter",
+      "downloadLink": "https://store.steampowered.com/app/2357570/Overwatch_2/",
+      "description": "A vibrant team-based shooter featuring diverse heroes with unique abilities and roles, emphasizing teamwork and objectives.",
+      "ratings": "4.2",
+      "developer": "Blizzard Entertainment"
+    },
+    {
+      "id": "12",
+      "title": "Halo Infinite",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Halo_Infinite.png/250px-Halo_Infinite.png",
+      "category": "FPS",
+      "downloadLink": "https://store.steampowered.com/app/1240440/Halo_Infinite/",
+      "description": "The legendary Halo franchise returns with a new open-world campaign and competitive multiplayer modes built on next-gen visuals.",
+      "ratings": "4.4",
+      "developer": "343 Industries"
+    },
+    {
+      "id": "13",
+      "title": "The Witcher 3: Wild Hunt",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+      "category": "Action RPG",
+      "downloadLink": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+      "description": "An award-winning open-world RPG following Geralt of Rivia’s monster-hunting journey in a beautifully crafted medieval world.",
+      "ratings": "4.9",
+      "developer": "CD Projekt Red"
+    },
+    {
+      "id": "14",
+      "title": "Far Cry 6",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Far_cry_6_cover.jpg/250px-Far_cry_6_cover.jpg",
+      "category": "FPS",
+      "downloadLink": "https://store.ubi.com/us/far-cry-6/60c74d9c2b3e0567ec2d07e0.html",
+      "description": "A first-person shooter set in a tropical dictatorship, featuring an expansive open world filled with guerrilla warfare and chaos.",
+      "ratings": "4.3",
+      "developer": "Ubisoft Toronto"
+    },
+    {
+      "id": "15",
+      "title": "Valorant",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/250px-Valorant_logo_-_pink_color_version.svg.png",
+      "category": "Tactical FPS",
+      "downloadLink": "https://playvalorant.com/",
+      "description": "A competitive 5v5 tactical shooter combining precise gunplay with unique agent abilities, demanding both aim and strategy.",
+      "ratings": "4.7",
+      "developer": "Riot Games"
+    },
+    {
+      "id": "16",
+      "title": "Forza Horizon 5",
+      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Forza_Horizon_5_cover_art.jpg/250px-Forza_Horizon_5_cover_art.jpg",
+      "category": "Racing",
+      "downloadLink": "https://www.xbox.com/en-US/games/forza-horizon-5",
+      "description": "Forza Horizon 5 is a racing video game set in an open world environment based in a fictional representation of Mexico.",
+      "ratings": "4.9",
+      "developer": "Playground Games"
+    }
+  ]
+  
