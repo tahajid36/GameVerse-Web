@@ -10,6 +10,7 @@ const GameSection = () => {
     return (
         <>
         <div className='bg-black'>
+            <title>All Games</title>
         <Container>
             <Navbar></Navbar>
         </Container>

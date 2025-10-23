@@ -14,7 +14,8 @@ const GameDetails = () => {
        setGameData(gameDetails)
     },[id, data])
     return (
-        <div>
+        <div className='min-h-screen flex justify-center items-center'>
+            <title>Game Info</title>
             <Container>
             <GameDetailsCard gameData={gameData}></GameDetailsCard>
             </Container>

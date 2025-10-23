@@ -17,9 +17,10 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="navbar shadow-sm">
-        <div className="navbar-start">
+    <div className="">
+      <div className="navbar flex justify-around">
+        {/* navbar start div  */}
+        <div className="flex ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -57,7 +58,8 @@ const Navbar = () => {
           </div>
           <img className="h-15 w-15" src={logo} alt="" />
         </div>
-        <div className="navbar-center hidden lg:flex">
+        {/* navbar center div  */}
+        <div className=" hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <NavLink to={"/"}>
               <li>
@@ -74,7 +76,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end flex justify-center">
+        {/* navbar end div  */}
+        <div className=" flex justify-center">
           {user ? (
             <Link
               to="/auth/login"

@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
 
 const GameCard = ({ game }) => {
-  const {id, coverPhoto, title, category } = game;
+  const {id, coverPhoto, title, category, ratings } = game;
 
   // console.log(user)
   return (
@@ -16,9 +16,8 @@ const GameCard = ({ game }) => {
             <p>{category}</p>
           </div>
           <Link to={`/gamedetails/${id}`}>
-          <button className="btn bg-linear-65 from-purple-500 to-pink-500">
-            Install
-          </button></Link>
+          <div className="badge badge-outline border-none badge-primary">{ratings}</div>
+          </Link>
         </div>
       </div>
     </>
