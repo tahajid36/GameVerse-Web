@@ -8,13 +8,13 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     SignOut()
-    .then(()=>{
-      alert('sign out succesfully')
-    })
-    .catch(error=> {
-      console.log(error.message)
-    })
-  }
+      .then(() => {
+        alert("sign out succesfully");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
   return (
     <div>
@@ -74,20 +74,31 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          {user ? <Link
-            to="/auth/login"
-            onClick={handleSignOut}
-            className="btn dotmatrix text-red-600 btn-ghost join-item"
-          >
-            Sign Out
-          </Link> : <Link
-            to="/auth/login"
-            className="btn dotmatrix text-red-600 btn-ghost join-item"
-          >
-            Sign In
-          </Link>}
-          
+        <div className="navbar-end flex justify-center">
+          {user ? (
+            <Link
+              to="/auth/login"
+              onClick={handleSignOut}
+              className="btn dotmatrix text-red-600 btn-ghost join-item"
+            >
+              Sign Out
+            </Link>
+          ) : (
+            <Link
+              to="/auth/login"
+              className="btn dotmatrix text-red-600 btn-ghost join-item"
+            >
+              Sign In
+            </Link>
+          )}
+
+          {user && <div class="avatar">
+            <div class="w-11 rounded-full">
+              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+            </div>
+          </div>}
+
+
         </div>
       </div>
     </div>
