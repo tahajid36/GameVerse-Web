@@ -1,16 +1,12 @@
-# React + Vite
+# Welcome to GameVerse game Library 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gameverse is a game library where you can find all of your desired favourite game titles it includes tons of popular game title's. Huge Collection inside one web. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Functionalities
+Clicking the Home link of navbar from any of the pages of the web will take u to the Home page. 
+Clicking the All Games link of navbar from any of the pages of the web will take u to the Game Library page where u will find all games.
+Clicking the Login button of corner will take u to the Login page where u can login and if u dont have an account u can go to the register page by clicking the highlighted register link in bottom of the form.
+Once u are Registered it will take u to the Login Page after log in u will land to the Home Page .
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
