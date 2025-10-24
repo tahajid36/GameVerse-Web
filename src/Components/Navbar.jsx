@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="navbar flex justify-around">
+      <div className="navbar flex justify-around ">
         {/* navbar start div  */}
         <div className="flex ">
           <div className="dropdown">
@@ -41,7 +41,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-30 p-2 shadow"
             >
               {/* responsive part of submenu  */}
               <NavLink to={"/"}>
@@ -52,6 +52,11 @@ const Navbar = () => {
               <NavLink to={"/gamessection"}>
                 <li>
                   <a>All Games</a>
+                </li>
+              </NavLink>
+              <NavLink to={"/myprofile"}>
+                <li>
+                  <a>My Profile</a>
                 </li>
               </NavLink>
             </ul>
@@ -71,37 +76,50 @@ const Navbar = () => {
                 <a>All Games</a>
               </li>
             </NavLink>
-            <li>
-              <a>Find us</a>
-            </li>
+            <NavLink to={"/myprofile"}>
+              <li>
+                <a>My Profile</a>
+              </li>
+            </NavLink>
           </ul>
         </div>
         {/* navbar end div  */}
-        <div className=" flex justify-center">
+        <div className=" flex  items-center justify-center">
           {user ? (
             <Link
               to="/auth/login"
               onClick={handleSignOut}
               className="btn dotmatrix text-red-600 btn-ghost join-item"
             >
-              Sign Out
+              Log Out
             </Link>
           ) : (
             <Link
               to="/auth/login"
-              className="btn dotmatrix text-red-600 btn-ghost join-item"
+              className="btn dotmatrix text-red-600 btn-ghost btn-sm join-item"
             >
-              Sign In
+              LogIn/Register
             </Link>
           )}
 
-          {user && <div class="avatar">
-            <div class="w-11 rounded-full">
-              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+          {user ? (
+            <div
+              class="avatar"
+             
+            >
+              <div class="w-11 rounded-full">
+                <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+              </div>
             </div>
-          </div>}
-
-
+          ) : (
+            <div
+              class="avatar"
+            >
+              <div class="w-11 rounded-full" >
+                <img  src="https://imgs.search.brave.com/RmV4khtF4a4Ja2H1UBPz2TLXwGfiUcfUGh7ezE7rw7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZiL2E4/L2U0LzZiYThlNGU1/MjY4Zjg0YzM1MDdk/ZjcyZGM3ODk2ZDc3/LmpwZw" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

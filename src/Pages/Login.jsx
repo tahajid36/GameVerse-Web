@@ -1,27 +1,39 @@
-import React, { use } from "react";
-import { Link, useNavigate } from "react-router";
+import React, { use, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation()
+  const [error , setError] = useState("")
 
-  const { SignIn, setUser, SignOut, googleSignIn } = use(AuthContext);
+  const { SignIn, setUser, SignOut, googleSignIn, setEmail, resetEmail } = use(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    const Regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+   
+    
+
+
+ 
     // sign in method
     SignIn(email, password)
       .then((result) => {
         const user = result.user;
         console.log("this is loged in", user);
         setUser(user);
-        navigate("/");
+        navigate(`${location.state ? location.state : '/'}`);
       })
       .catch((error) => {
-        console.log(error.message);
+        if(!Regex.test(password)){
+          setError(`Password must've atleast 6 characters and 1 upper and 1 lower case character atleast`)
+        }
+        else{
+          setError(error.message)
+        }
       });
   };
   const handleGoogleSignIn = () => {
@@ -29,10 +41,10 @@ const Login = () => {
     .then(result => {
       const user  = result.user 
       setUser(user)
-      navigate('/')
+      navigate(`${location.state ? location.state : '/'}`);
     })
     .catch(error=> {
-      console.log(error)
+      setError(error.message)
     })
 
   }
@@ -46,6 +58,8 @@ const Login = () => {
           <fieldset className="fieldset">
             <label className="label">Email</label>
             <input
+            onChange={(e)=>setEmail(e.target.value)}
+            value={resetEmail}
               name="email"
               type="email"
               className="input"
@@ -61,8 +75,13 @@ const Login = () => {
               required
             />
             <div>
+              <Link to='/auth/paswordreset'>
               <a className="link link-hover">Forgot password?</a>
+              </Link>
+             
             </div>
+            <p className="text-red-500">{error}</p>
+
             <button onClick={handleGoogleSignIn} class="btn bg-white mt-4 text-black border-[#e5e5e5]">
               <svg
                 aria-label="Google logo"

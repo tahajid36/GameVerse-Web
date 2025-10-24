@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
 import { useNavigate } from "react-router";
@@ -6,20 +6,29 @@ import { useNavigate } from "react-router";
 const Register = () => {
   const navigate= useNavigate()
   const {CreateUser, setUser , googleSignIn} = use(AuthContext)
+  const [error, setError] = useState('')
     const handleRegister=(e)=>{
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password)
+        const Regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
+        // console.log(email, password)
         CreateUser(email,password)
         .then(result=>{
           // console.log(result.user)
           const user = result.user
           setUser(user)
-          navigate('/auth/login')
+          navigate('/')
         })
         .catch(error=>{
-          console.log(error.message)
+          if(!Regex.test(password)){
+            setError("Password must be 6+ characters with upper and lowercase letters.")
+          }
+          else{
+            setError(error.message)
+          }
+          // console.log(error.message)
         })
     }
     const handleRegisterGoogle = () => {
@@ -47,11 +56,14 @@ const Register = () => {
       {/* name field  */}
        <label className="label">First Name</label>
        <input name='name' type="text" className="input" placeholder="First Name" required />
+       {/* Photo url field  */}
+       <label className="label">Photo URL</label>
+       <input name='name' type="text" className="input" placeholder="Paste your photo url" required />
        {/* password field  */}
        <label className="label">Password</label>
        <input name='password' type="password" className="input" placeholder="Password" required />
-       <div><a className="link link-hover">Forgot password?</a></div>
-
+    
+       <p className="text-red-500">{error}</p>
        <button onClick={handleRegisterGoogle} class="btn bg-white mt-4 text-black border-[#e5e5e5]">
               <svg
                 aria-label="Google logo"

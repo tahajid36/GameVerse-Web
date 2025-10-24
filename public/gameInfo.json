@@ -1,163 +1,162 @@
 [
-    {
-      "id": "1",
-      "title": "Call of Duty: Modern Warfare III",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/MWIII_Cover_Art.png/250px-MWIII_Cover_Art.png",
-      "category": "FPS",
-      "downloadLink": "https://www.callofduty.com/modernwarfare3",
-      "description": "The latest in the iconic Call of Duty franchise, offering high-octane first-person combat, cinematic storytelling, and expansive multiplayer modes.",
-      "ratings": "4.6",
-      "developer": "Infinity Ward"
-    },
-    {
-      "id": "2",
-      "title": "Battlefield 2042",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Battlefield_2042_cover_art.jpg/250px-Battlefield_2042_cover_art.jpg",
-      "category": "FPS",
-      "downloadLink": "https://www.ea.com/games/battlefield/battlefield-2042",
-      "description": "A massive-scale, futuristic warfare FPS with large maps, destructible environments, and dynamic weather systems.",
-      "ratings": "4.1",
-      "developer": "DICE"
-    },
-    {
-      "id": "3",
-      "title": "Counter-Strike 2",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/250px-CS2_Cover_Art.jpg",
-      "category": "FPS",
-      "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
-      "description": "The evolution of the world’s most competitive tactical shooter, featuring updated Source 2 engine visuals and physics.",
-      "ratings": "4.7",
-      "developer": "Valve"
-    },
-    {
-      "id": "4",
-      "title": "Cyberpunk 2077",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
-      "category": "Action RPG",
-      "downloadLink": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
-      "description": "An open-world action RPG set in a futuristic city full of life, crime, and corporate warfare, where your choices shape the story.",
-      "ratings": "4.5",
-      "developer": "CD Projekt Red"
-    },
-    {
-      "id": "5",
-      "title": "DOOM Eternal",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Cover_Art_of_Doom_Eternal.png/250px-Cover_Art_of_Doom_Eternal.png",
-      "category": "FPS",
-      "downloadLink": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
-      "description": "An intense, fast-paced shooter that puts players in control of the Doom Slayer to battle demons across hellish landscapes.",
-      "ratings": "4.8",
-      "developer": "id Software"
-    },
-    {
-      "id": "6",
-      "title": "Apex Legends",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
-      "category": "FPS Battle Royale",
-      "downloadLink": "https://store.steampowered.com/app/1172470/Apex_Legends/",
-      "description": "A hero-based battle royale shooter set in the Titanfall universe, featuring unique characters, teamwork, and fluid movement.",
-      "ratings": "4.6",
-      "developer": "Respawn Entertainment"
-    },
-    {
-      "id": "7",
-      "title": "Rainbow Six Siege",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg/250px-Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg",
-      "category": "Tactical FPS",
-      "downloadLink": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
-      "description": "A tactical shooter focusing on strategy, team play, and destruction-based gameplay where every wall can be a potential breach point.",
-      "ratings": "4.4",
-      "developer": "Ubisoft"
-    },
-    {
-      "id": "8",
-      "title": "Escape from Tarkov",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Escape_from_Tarkov.jpg/250px-Escape_from_Tarkov.jpg",
-      "category": "Hardcore FPS",
-      "downloadLink": "https://www.escapefromtarkov.com/",
-      "description": "A hardcore and realistic online FPS with survival elements and deep weapon customization set in a fictional war-torn region.",
-      "ratings": "4.3",
-      "developer": "Battlestate Games"
-    },
-    {
-      "id": "9",
-      "title": "Red Dead Redemption 2",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
-      "category": "Action Adventure",
-      "downloadLink": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
-      "description": "An epic Western tale of loyalty and survival with stunning visuals and one of the richest open worlds ever made.",
-      "ratings": "4.9",
-      "developer": "Rockstar Games"
-    },
-    {
-      "id": "10",
-      "title": "Elden Ring",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
-      "category": "Action RPG",
-      "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
-      "description": "A vast open-world RPG from the creators of Dark Souls, blending exploration, combat, and lore in a mysterious fantasy world.",
-      "ratings": "4.9",
-      "developer": "FromSoftware"
-    },
-    {
-      "id": "11",
-      "title": "Overwatch 2",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Overwatch_2_Steam_artwork.jpg/250px-Overwatch_2_Steam_artwork.jpg",
-      "category": "Hero Shooter",
-      "downloadLink": "https://store.steampowered.com/app/2357570/Overwatch_2/",
-      "description": "A vibrant team-based shooter featuring diverse heroes with unique abilities and roles, emphasizing teamwork and objectives.",
-      "ratings": "4.2",
-      "developer": "Blizzard Entertainment"
-    },
-    {
-      "id": "12",
-      "title": "Halo Infinite",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Halo_Infinite.png/250px-Halo_Infinite.png",
-      "category": "FPS",
-      "downloadLink": "https://store.steampowered.com/app/1240440/Halo_Infinite/",
-      "description": "The legendary Halo franchise returns with a new open-world campaign and competitive multiplayer modes built on next-gen visuals.",
-      "ratings": "4.4",
-      "developer": "343 Industries"
-    },
-    {
-      "id": "13",
-      "title": "The Witcher 3: Wild Hunt",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
-      "category": "Action RPG",
-      "downloadLink": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
-      "description": "An award-winning open-world RPG following Geralt of Rivia’s monster-hunting journey in a beautifully crafted medieval world.",
-      "ratings": "4.9",
-      "developer": "CD Projekt Red"
-    },
-    {
-      "id": "14",
-      "title": "Far Cry 6",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Far_cry_6_cover.jpg/250px-Far_cry_6_cover.jpg",
-      "category": "FPS",
-      "downloadLink": "https://store.ubi.com/us/far-cry-6/60c74d9c2b3e0567ec2d07e0.html",
-      "description": "A first-person shooter set in a tropical dictatorship, featuring an expansive open world filled with guerrilla warfare and chaos.",
-      "ratings": "4.3",
-      "developer": "Ubisoft Toronto"
-    },
-    {
-      "id": "15",
-      "title": "Valorant",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/250px-Valorant_logo_-_pink_color_version.svg.png",
-      "category": "Tactical FPS",
-      "downloadLink": "https://playvalorant.com/",
-      "description": "A competitive 5v5 tactical shooter combining precise gunplay with unique agent abilities, demanding both aim and strategy.",
-      "ratings": "4.7",
-      "developer": "Riot Games"
-    },
-    {
-      "id": "16",
-      "title": "Forza Horizon 5",
-      "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Forza_Horizon_5_cover_art.jpg/250px-Forza_Horizon_5_cover_art.jpg",
-      "category": "Racing",
-      "downloadLink": "https://www.xbox.com/en-US/games/forza-horizon-5",
-      "description": "Forza Horizon 5 is a racing video game set in an open world environment based in a fictional representation of Mexico.",
-      "ratings": "4.9",
-      "developer": "Playground Games"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "Call of Duty: Modern Warfare III",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/MWIII_Cover_Art.png/250px-MWIII_Cover_Art.png",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/modernwarfare3",
+    "description": "Call of Duty: Modern Warfare III is the epic next installment in the renowned Call of Duty franchise, offering a highly immersive and intense first-person shooter experience. Players engage in high-octane combat scenarios set across global locations, combining cinematic storytelling with a vast array of multiplayer modes. With revamped visuals and upgraded mechanics, this game pushes the limits of tactical warfare, featuring a gripping campaign that challenges players to adapt to diverse mission objectives and approaches. Multiplayer fans will enjoy an expansive selection of classic and new maps, alongside fresh weapons, customization options, and a brand-new open world Zombies experience where teamwork and strategy are crucial to survival.",
+    "ratings": "4.6",
+    "developer": "Infinity Ward"
+  },
+  {
+    "id": "2",
+    "title": "Battlefield 2042",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Battlefield_2042_cover_art.jpg/250px-Battlefield_2042_cover_art.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.ea.com/games/battlefield/battlefield-2042",
+    "description": "Battlefield 2042 immerses players in a futuristic, large-scale warfare FPS that redefines the genre with massive maps, dynamic environments, and unprecedented destructibility. Set in a near-future world shaken by global conflicts, players are thrust into high-stakes battles featuring advanced technology and cutting-edge vehicles. The game showcases innovative dynamic weather systems that impact gameplay and strategic decisions. Whether engaging in solo missions or coordinated team battles, Battlefield 2042 offers a thrilling combination of tactical depth, explosive combat, and an evolving multiplayer experience that keeps players coming back for relentless action.",
+    "ratings": "4.1",
+    "developer": "DICE"
+  },
+  {
+    "id": "3",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/250px-CS2_Cover_Art.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "Counter-Strike 2 is the evolution of the iconic tactical shooter series, delivering refined gameplay driven by the powerful Source 2 engine. With enhanced visuals, physics, and smoother mechanics, this game elevates the competitive experience to new heights. Players engage in precise, fast-paced missions that emphasize teamwork, strategy, and skillful gunplay across multiple classic and modern maps. The game supports both casual and professional scenes with robust matchmaking, making it a cornerstone of the FPS competitive community. Whether defusing bombs or rescuing hostages, every round demands sharp focus and collaborative execution.",
+    "ratings": "4.7",
+    "developer": "Valve"
+  },
+  {
+    "id": "4",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+    "description": "Cyberpunk 2077 is an ambitious open-world action RPG set in the sprawling, neon-lit metropolis of Night City, where technology and body augmentation are deeply intertwined with every aspect of life. Players take on the role of V, a mercenary searching for a one-of-a-kind implant that promises immortality. The game features a rich narrative shaped by player choices, immersive first-person combat, multiple skill trees, and a deep crafting and customization system. Beyond the thrilling main storyline, Cyberpunk 2077 offers a vibrant world buzzing with diverse characters, branching side quests, and dynamic events, establishing itself as a landmark title in modern RPGs.",
+    "ratings": "4.5",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "5",
+    "title": "DOOM Eternal",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Cover_Art_of_Doom_Eternal.png/250px-Cover_Art_of_Doom_Eternal.png",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+    "description": "DOOM Eternal is an adrenaline-pumping, fast-paced first-person shooter that boldly continues the saga of the Doom Slayer as he battles relentless demonic forces. The game emphasizes fluid movement, brutal combat, and an arsenal of powerful weapons that allow players to creatively destroy enemies in hellish environments. Alongside intense single-player missions, DOOM Eternal challenges players with complex level designs, platforming elements, and strategic resource management such as health and ammo pickups. The visceral and immersive experience offers an electrifying journey through layers of hell and Earth’s corrupted landscapes, making it a must-play for fans of high intensity action.",
+    "ratings": "4.8",
+    "developer": "id Software"
+  },
+  {
+    "id": "6",
+    "title": "Apex Legends",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
+    "category": "FPS Battle Royale",
+    "downloadLink": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+    "description": "Apex Legends redefines the battle royale genre by combining hero-based shooter mechanics with fast-paced and fluid gameplay set in the expansive Titanfall universe. Teams of three players select from a roster of unique characters, each equipped with special abilities that enhance team strategy, survivability, and combat tactics. The game is celebrated for its intuitive ping communication system, dynamic map rotations, and consistent content updates that introduce new legends, weapons, and events. Apex Legends offers an engaging and competitive experience that rewards both individual skill and team coordination within a highly polished and vibrant environment.",
+    "ratings": "4.6",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "Rainbow Six Siege",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg/250px-Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg",
+    "category": "Tactical FPS",
+    "downloadLink": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+    "description": "Rainbow Six Siege is a highly tactical and strategic first-person shooter focusing on careful planning, teamwork, and the innovative use of environmental destruction. Players choose from an elite roster of operators, each with unique gadgets and roles, to execute attack and defense strategies in objective-based game modes. The destructible environments add a dynamic element of surprise and adaptability, enabling players to breach walls, floors, and ceilings to outmaneuver opponents. With a vibrant competitive scene and continuous addition of new content, Rainbow Six Siege remains a benchmark for tactical multiplayer FPS games that emphasize skill and communication.",
+    "ratings": "4.4",
+    "developer": "Ubisoft"
+  },
+  {
+    "id": "8",
+    "title": "Escape from Tarkov",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Escape_from_Tarkov.jpg/250px-Escape_from_Tarkov.jpg",
+    "category": "Hardcore FPS",
+    "downloadLink": "https://www.escapefromtarkov.com/",
+    "description": "Escape from Tarkov is a hardcore and realistic online first-person shooter with strong survival and role-playing elements, set in the fictional, war-torn Norvinsk region. Players must navigate hostile environments packed with enemy PMC factions, AI-controlled Scavs, and dynamic weather systems that affect gameplay and visibility. The game features deeply immersive mechanics including ballistics simulation, weapon customization, medical treatment, and a detailed inventory system. The combat is unforgiving, requiring tactical awareness, stealth, and resource management to survive long enough to escape. Escape from Tarkov offers an intense, immersive, and rewarding experience that challenges even the most seasoned FPS fans.",
+    "ratings": "4.3",
+    "developer": "Battlestate Games"
+  },
+  {
+    "id": "9",
+    "title": "Red Dead Redemption 2",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+    "category": "Action Adventure",
+    "downloadLink": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+    "description": "Red Dead Redemption 2 is a sweeping epic action-adventure game set in the final days of the American Wild West. Players embody Arthur Morgan, a member of the Van der Linde gang, as he navigates a world filled with danger, loyalty, and moral ambiguity. The game boasts one of the richest and most immersive open worlds ever created, featuring vibrant landscapes, realistic animal behavior, dynamic weather, and deep NPC interactions that respond to player actions. Beyond the captivating main storyline, players can explore a variety of side quests, hunting, fishing, crafting, and more, making it a landmark in narrative-driven gameplay and open-world design.",
+    "ratings": "4.9",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "10",
+    "title": "Elden Ring",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    "description": "Elden Ring is a groundbreaking open-world action RPG forged by the creative minds at FromSoftware and the storytelling prowess of George R. R. Martin. This title merges deeply challenging combat with vast explorations of a mysterious and lush fantasy realm known as the Lands Between. Players take on the role of a Tarnished warrior venturing through sprawling landscapes, castles, and dungeons while discovering rich lore, dynamic weather systems, and formidable enemies. The game emphasizes player freedom, allowing for diverse builds, skill experimentation, and nonlinear storytelling, setting a new standard for the genre and captivating players worldwide.",
+    "ratings": "4.9",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "11",
+    "title": "Overwatch 2",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Overwatch_2_Steam_artwork.jpg/250px-Overwatch_2_Steam_artwork.jpg",
+    "category": "Hero Shooter",
+    "downloadLink": "https://store.steampowered.com/app/2357570/Overwatch_2/",
+    "description": "Overwatch 2 is a vibrant, fast-paced team-based hero shooter that builds upon the original's success with new characters, maps, and gameplay updates. Featuring a diverse roster of heroes, each with unique abilities and playstyles, the game encourages cooperative strategy and objective-focused combat. Players engage in thrilling matches that demand teamwork, skill, and quick thinking in various modes such as Capture the Flag, Control, and Push. Overwatch 2 continues to evolve with regular community events, balancing adjustments, and a commitment to providing an inclusive competitive environment that appeals to gamers of all skill levels.",
+    "ratings": "4.2",
+    "developer": "Blizzard Entertainment"
+  },
+  {
+    "id": "12",
+    "title": "Halo Infinite",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Halo_Infinite.png/250px-Halo_Infinite.png",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/1240440/Halo_Infinite/",
+    "description": "Halo Infinite marks the triumphant return of the legendary Halo franchise with an expansive open-world campaign and a thrilling multiplayer experience. Players once again assume the role of Master Chief, battling to save humanity against formidable alien forces across stunning sci-fi landscapes. The game combines classic Halo gameplay elements with modern enhancements such as improved mobility, weapon handling, and graphics powered by the new Slipstream engine. Multiplayer enthusiasts enjoy well-balanced maps, new game modes, and extensive customization options, making Halo Infinite a fresh yet familiar addition to the beloved series.",
+    "ratings": "4.4",
+    "developer": "343 Industries"
+  },
+  {
+    "id": "13",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+    "description": "The Witcher 3: Wild Hunt is an acclaimed open-world action RPG that follows monster hunter Geralt of Rivia as he searches for his missing adopted daughter in a war-torn fantasy realm. The game features a rich narrative filled with moral complexity, memorable characters, and branching storylines that adapt to player choices. Its vast and beautifully detailed world offers countless side quests, challenging monsters, and intricate crafting and alchemy systems. With its deep role-playing mechanics, engrossing story, and immerse atmosphere, The Witcher 3 has set a benchmark for RPG storytelling and gameplay realism.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "14",
+    "title": "Far Cry 6",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Far_cry_6_cover.jpg/250px-Far_cry_6_cover.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.ubi.com/us/far-cry-6/60c74d9c2b3e0567ec2d07e0.html",
+    "description": "Far Cry 6 drops players into a tropical dictatorship ruled by a ruthless dictator, where guerrilla warfare and chaotic resistance define the gameplay. This first-person shooter offers an expansive open-world filled with vibrant environments, wildlife, and diverse NPC factions. Players embark on thrilling missions involving sabotage, tactical combat, and exploration, wielding a variety of weapons and vehicles to topple the regime. The game combines an emotionally gripping storyline with immersive gameplay mechanics, including character customization, crafting, and a dynamic world that responds to player decisions and actions.",
+    "ratings": "4.3",
+    "developer": "Ubisoft Toronto"
+  },
+  {
+    "id": "15",
+    "title": "Valorant",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/250px-Valorant_logo_-_pink_color_version.svg.png",
+    "category": "Tactical FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is a highly competitive tactical shooter that blends precision gunplay with strategic team-based gameplay, spotlighting a roster of unique agents endowed with special abilities. The game demands sharp aim, quick reflexes, and clever use of agent powers to outsmart opponents in 5v5 matches. Known for its crisp visuals, balanced gameplay, and emphasis on strategy, Valorant has rapidly become a staple of the esports scene. Each agent brings distinct tactical options that encourage diverse playstyles, and the constantly updated maps and modes ensure long-term player engagement and community growth.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "16",
+    "title": "Forza Horizon 5",
+    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Forza_Horizon_5_cover_art.jpg/250px-Forza_Horizon_5_cover_art.jpg",
+    "category": "Racing",
+    "downloadLink": "https://www.xbox.com/en-US/games/forza-horizon-5",
+    "description": "Forza Horizon 5 is a thrilling racing game that transports players to an expansive open-world environment inspired by the diverse landscapes of Mexico. The game features breathtaking graphics, dynamic weather, and a rich soundtrack that enhances the immersive racing experience. Players can participate in a variety of events, from high-speed street races to off-road adventures, and customize their vehicles with extensive options. Forza Horizon 5 supports both solo play and cooperative online multiplayer, offering endless hours of fun and competition in a beautifully realized and vibrant world.",
+    "ratings": "4.9",
+    "developer": "Playground Games"
+  }
+]

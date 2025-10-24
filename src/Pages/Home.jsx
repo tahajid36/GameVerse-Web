@@ -20,14 +20,14 @@ const Home = () => {
             <div>
                 <h2 className='text-5xl dotmatrix text-center mt-12  text-red-600'>TOP-RATED TITLES OF 2025</h2>
               
-                <div className='mt-8 grid grid-cols-1 md:grid-cols-4 container mx-auto'>
+                <div className='my-8  grid gap-9 grid-cols-1 md:grid-cols-4 container mx-auto'>
                    
                    {GameData.map(game=><GameCard game={game}></GameCard>)}
 
                </div>
                
                 <div className='flex justify-center items-center'>
-                <Link to={'/gamessection'}><button className='btn btn-outline'>Browse All Games</button></Link>
+                <Link to={'/gamessection'}><button className='btn btn-outline hover:bg-linear-65 from-purple-500 to-pink-500'>Browse All Games</button></Link>
 
                 </div>
 

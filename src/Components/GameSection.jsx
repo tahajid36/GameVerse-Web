@@ -3,6 +3,7 @@ import GameCard from './GameCard';
 import Container from './Container';
 import { useLoaderData } from 'react-router';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const GameSection = () => {
     const gameData = useLoaderData()
@@ -20,6 +21,9 @@ const GameSection = () => {
             {gameData.map(game=><GameCard game={game}></GameCard>)}
             
         </div>
+        </Container>
+        <Container>
+            <Footer></Footer>
         </Container>
         </div>
         </>
