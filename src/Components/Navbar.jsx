@@ -108,7 +108,7 @@ const Navbar = () => {
              
             >
               <div class="w-11 rounded-full">
-                <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                <img src={user.photoURL} />
               </div>
             </div>
           ) : (

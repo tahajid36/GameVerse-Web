@@ -5,12 +5,14 @@ import { useNavigate } from "react-router";
 
 const Register = () => {
   const navigate= useNavigate()
-  const {CreateUser, setUser , googleSignIn} = use(AuthContext)
+  const {CreateUser, setUser , googleSignIn, updateUser} = use(AuthContext)
   const [error, setError] = useState('')
     const handleRegister=(e)=>{
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value;
+        const photo = e.target.photourl.value;
+        const name = e.target.name.value;
         const Regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
         // console.log(email, password)
@@ -18,9 +20,24 @@ const Register = () => {
         .then(result=>{
           // console.log(result.user)
           const user = result.user
-          setUser(user)
+          // setUser(user)
+
+
+          updateUser({
+            displayName: name , photoURL: photo
+          }).then(()=> {
+            setUser({...user, displayName: name , photoURL: photo})
+          }).catch(error=>{
+            console.log(error.message)
+            setUser(user)
+          })
+          
+
+
           navigate('/')
         })
+
+
         .catch(error=>{
           if(!Regex.test(password)){
             setError("Password must be 6+ characters with upper and lowercase letters.")
@@ -58,7 +75,7 @@ const Register = () => {
        <input name='name' type="text" className="input" placeholder="First Name" required />
        {/* Photo url field  */}
        <label className="label">Photo URL</label>
-       <input name='name' type="text" className="input" placeholder="Paste your photo url" required />
+       <input name='photourl' type="text" className="input" placeholder="Paste your photo url" required />
        {/* password field  */}
        <label className="label">Password</label>
        <input name='password' type="password" className="input" placeholder="Password" required />

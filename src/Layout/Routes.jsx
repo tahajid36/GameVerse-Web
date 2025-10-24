@@ -11,6 +11,7 @@ import MyProfile from "../Pages/MyProfile"
 import ForgetPassword from "../Pages/ForgetPassword"
 import Loading from "../Pages/Loading"
 import Error from "../Components/Error"
+import UpdateProfile from "../Pages/UpdateProfile"
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,12 @@ export const router = createBrowserRouter([
                 path: '/myprofile',
                 element: <PrivateRoute>
                     <MyProfile> </MyProfile>
+                </PrivateRoute>
+            },
+            {
+                path: '/updateprofile',
+                element: <PrivateRoute>
+                    <UpdateProfile></UpdateProfile>
                 </PrivateRoute>
             },
             
