@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -15,16 +16,12 @@ const Login = () => {
     const password = e.target.password.value;
     const Regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
    
-    
-
-
- 
     // sign in method
     SignIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log("this is loged in", user);
         setUser(user);
+        toast.success("User logged in Succesfully")
         navigate(`${location.state ? location.state : '/'}`);
       })
       .catch((error) => {
@@ -42,6 +39,7 @@ const Login = () => {
       const user  = result.user 
       setUser(user)
       navigate(`${location.state ? location.state : '/'}`);
+    
     })
     .catch(error=> {
       setError(error.message)
@@ -75,13 +73,16 @@ const Login = () => {
               required
             />
             <div>
-              <Link to='/auth/paswordreset'>
+              <Link to='/auth/passwordreset'>
               <a className="link link-hover">Forgot password?</a>
               </Link>
              
             </div>
             <p className="text-red-500">{error}</p>
 
+            
+
+            <button className="btn btn-neutral mt-1">Login</button>
             <button onClick={handleGoogleSignIn} class="btn bg-white mt-4 text-black border-[#e5e5e5]">
               <svg
                 aria-label="Google logo"
@@ -112,8 +113,6 @@ const Login = () => {
               </svg>
               Login with Google
             </button>
-
-            <button className="btn btn-neutral mt-1">Login</button>
             <p>
               Don't have an account?
               <Link className="text-secondary" to="/auth/register">

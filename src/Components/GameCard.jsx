@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
+import { motion } from "motion/react"
+import { scale } from "framer-motion";
+
+
+
 
 
 const GameCard = ({ game }) => {
@@ -8,8 +13,22 @@ const GameCard = ({ game }) => {
   // console.log(user)
   return (
     <>
-     <Link to={`/gamedetails/${id}`}>
-      <div className="p-6 h-[440px] bg-base-300 relative card  space-y-5">
+    <motion.div 
+    whileHover={{
+      scale:[null, 1.0, 1.1],
+      transition: {
+        duration: 0.2,
+        times: [0, 0.6, 1],
+        ease: ["easeInOut", "easeOut"]
+      },
+    }}
+    transition={{
+      duration: 0.3,
+      ease: "easeOut"
+    }}
+    >
+    <Link to={`/gamedetails/${id}`}>
+      <div className="gamecard p-6 h-[440px] bg-base-300 relative card  space-y-5">
         <img className="w-full  mx-auto h-[320px]" src={coverPhoto} alt="" />
         <div className="flex justify-between items-center">
           <div className="">
@@ -22,6 +41,9 @@ const GameCard = ({ game }) => {
         </div>
       </div>
       </Link>
+
+    </motion.div>
+     
     </>
   );
 };

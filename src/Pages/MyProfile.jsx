@@ -12,6 +12,7 @@ const MyProfile = () => {
   return (
     <>
       <Container>
+        <title>My Profile</title>
         <div className="flex flex-col justify-center items-center gradient  min-h-screen">
         <div class="avatar mb-6">
             <div class="w-30 rounded-full">

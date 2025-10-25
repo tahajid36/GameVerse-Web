@@ -12,6 +12,7 @@ import ForgetPassword from "../Pages/ForgetPassword"
 import Loading from "../Pages/Loading"
 import Error from "../Components/Error"
 import UpdateProfile from "../Pages/UpdateProfile"
+import { Toaster } from "react-hot-toast"
 
 export const router = createBrowserRouter([
     {
@@ -57,7 +58,9 @@ export const router = createBrowserRouter([
     
     {
         path: '/auth',
-        element: <AuthLayout></AuthLayout>,
+        element:
+             <AuthLayout></AuthLayout>
+        ,
         children: [
             {
                 path: '/auth/login',

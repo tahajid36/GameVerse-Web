@@ -2,17 +2,22 @@ import React, { use } from "react";
 import logo from "../assets/ChatGPT Image Oct 22, 2025, 07_24_17 PM.png";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Navbar = () => {
   const { user, SignOut } = use(AuthContext);
 
+  const notify = () => toast("User logged out succesfully")
+
   const handleSignOut = () => {
     SignOut()
       .then(() => {
-        alert("sign out succesfully");
+
       })
       .catch((error) => {
         console.log(error.message);
+        
       });
   };
 
@@ -88,7 +93,9 @@ const Navbar = () => {
           {user ? (
             <Link
               to="/auth/login"
-              onClick={handleSignOut}
+              onClick={()=>{
+                handleSignOut(), notify()
+              }}
               className="btn dotmatrix text-red-600 btn-ghost join-item"
             >
               Log Out
@@ -122,6 +129,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

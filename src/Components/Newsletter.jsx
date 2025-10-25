@@ -17,6 +17,8 @@ const Newsletter = () => {
                 className=" input w-7/12 placeholder-gray-500 text-red-500 bg-black border-pink-600" />
                 </div>
 
+                <button className='btn btn-outline w-5/10 '>Subscribe Now</button>
+
             </div>
         </div>
     );

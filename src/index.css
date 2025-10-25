@@ -25,6 +25,9 @@
 .gradient{
   background-image: linear-gradient(to bottom, #434343 0%, black 100%);
 }
+.gamecard{
+  border: 2px solid maroon;
+}
 
 /* @property --angle{
   syntax: "<angle>";

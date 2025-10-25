@@ -2,8 +2,12 @@ import React, { use, useState } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
 import { useNavigate } from "react-router";
+import { Bounce, toast, ToastContainer } from 'react-toastify';
+
 
 const Register = () => {
+  
+
   const navigate= useNavigate()
   const {CreateUser, setUser , googleSignIn, updateUser} = use(AuthContext)
   const [error, setError] = useState('')
@@ -20,6 +24,10 @@ const Register = () => {
         .then(result=>{
           // console.log(result.user)
           const user = result.user
+          
+
+          
+          
           // setUser(user)
 
 
@@ -27,14 +35,18 @@ const Register = () => {
             displayName: name , photoURL: photo
           }).then(()=> {
             setUser({...user, displayName: name , photoURL: photo})
+            toast.success("User Registered Succesfully")
+           
           }).catch(error=>{
             console.log(error.message)
             setUser(user)
           })
-          
-
-
           navigate('/')
+
+
+
+
+         
         })
 
 
@@ -81,6 +93,9 @@ const Register = () => {
        <input name='password' type="password" className="input" placeholder="Password" required />
     
        <p className="text-red-500">{error}</p>
+       
+       
+       <button className="btn btn-neutral mt-1">Register</button>
        <button onClick={handleRegisterGoogle} class="btn bg-white mt-4 text-black border-[#e5e5e5]">
               <svg
                 aria-label="Google logo"
@@ -111,14 +126,25 @@ const Register = () => {
               </svg>
               Login with Google
             </button>
-       
-       <button className="btn btn-neutral mt-1">Register</button>
        <p >Already have an account?<Link className='text-secondary' to='/auth/login'> Login</Link> </p>
 
      </fieldset>
      
    </form>
  </div>
+ <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+transition={Bounce}
+/>
      </div>
     );
 };
