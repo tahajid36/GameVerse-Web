@@ -2,7 +2,6 @@ import React, { use, useState } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../Auth/AuthProvider';
 import { useNavigate } from "react-router";
-import { Bounce, toast, ToastContainer } from 'react-toastify';
 
 
 const Register = () => {
@@ -35,7 +34,6 @@ const Register = () => {
             displayName: name , photoURL: photo
           }).then(()=> {
             setUser({...user, displayName: name , photoURL: photo})
-            toast.success("User Registered Succesfully")
            
           }).catch(error=>{
             console.log(error.message)
@@ -132,19 +130,7 @@ const Register = () => {
      
    </form>
  </div>
- <ToastContainer
-position="top-right"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick={false}
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="dark"
-transition={Bounce}
-/>
+
      </div>
     );
 };
