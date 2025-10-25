@@ -17,6 +17,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <Error></Error>,
         children: [
             {
                 index:true,
@@ -51,7 +52,9 @@ export const router = createBrowserRouter([
     },
     {
         path: '/gamessection',
-        element: <GameSection></GameSection>,
+        element: <PrivateRoute>
+            <GameSection></GameSection>
+        </PrivateRoute>,
         loader: ()=> fetch('/gameInfo.json')    
     },
     
@@ -74,6 +77,6 @@ export const router = createBrowserRouter([
                 Component: ForgetPassword
             }
         ]
-    }
-
+    },
+    
 ])

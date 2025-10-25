@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="navbar flex justify-around ">
+      <div className="navbar flex md:justify-around justify-between ">
         {/* navbar start div  */}
         <div className="flex ">
           <div className="dropdown">
@@ -44,7 +44,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-30 p-2 shadow"
+              className="menu z-10 menu-sm dropdown-content bg-base-100 rounded-box  mt-3 w-30 p-2 shadow"
             >
               {/* responsive part of submenu  */}
               <NavLink to={"/"}>

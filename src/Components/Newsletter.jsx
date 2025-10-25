@@ -3,7 +3,7 @@ import logo from "../assets/ChatGPT Image Oct 22, 2025, 07_24_17 PM.png";
 
 const Newsletter = () => {
     return (
-        <div className='grid grid-cols-1 mt-20 hover:border-pink-700 border rounded-2xl w-11/12 mx-auto md:grid-cols-2 items-center'>
+        <div className='grid grid-cols-1 mt-20 hover:border-[#800000] border rounded-2xl w-11/12 mx-auto md:grid-cols-2 items-center'>
             <img src={logo} alt="" />
             <div className='space-y-5'>
                
