@@ -48,9 +48,10 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center min-h-screen items-center">
+    <div className="flex justify-center min-h-screen items-center
+    ">
       <title>Login Now</title>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-6">
+      <div className="card border border-gray-500 w-full min-w-md max-w-sm shrink-0 shadow-2xl py-6">
         <h2 className="font-semibold text-2xl text-center">Login</h2>
         <form onSubmit={handleLogin} className="card-body">
           <fieldset className="fieldset">
@@ -60,7 +61,7 @@ const Login = () => {
             value={resetEmail}
               name="email"
               type="email"
-              className="input"
+              className="input w-full"
               placeholder="Email"
               required
             />
@@ -68,7 +69,7 @@ const Login = () => {
             <input
               name="password"
               type="password"
-              className="input"
+              className="input w-full"
               placeholder="Password"
               required
             />

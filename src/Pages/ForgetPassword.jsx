@@ -23,9 +23,9 @@ const ForgetPassword = () => {
         <>
       <Container>
         <title>Reset Password</title>
-        <div className="flex flex-col justify-center items-center gradient  min-h-screen">
+        <div className="flex flex-col justify-center items-center   min-h-screen">
             <h1 className='text-5xl mb-20 dotmatrix'>Reset Password </h1>
-            <div className="w-80 rounded-2xl border hover:border-amber-300 p-4 ">
+            <div className="min-w-md rounded-2xl border hover:border-amber-300 p-4 ">
                 
            
             <form onSubmit={handleReset} className="fieldset">
@@ -35,7 +35,7 @@ const ForgetPassword = () => {
                    value={resetEmail}
                     type="email"
                     name='email'
-                    className="input bg-base-300 placeholder:text-gray-500 "
+                    className="input w-full bg-base-300 placeholder:text-gray-500 "
                     placeholder="Enter email address" required
                     
                   />

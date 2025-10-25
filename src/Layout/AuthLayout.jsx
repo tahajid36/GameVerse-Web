@@ -14,16 +14,17 @@ const AuthLayout = () => {
                 </Container>
                 
             </header>
-            <main className=''>
-                <Container>
+            <main className=' bg-linear-to-br from-black via-gray-900 to-red-900'>
+                
                 <Outlet></Outlet>
 
-                </Container>
-                <Container>
-                    <Footer></Footer>
-                </Container>
+              
+               
               
             </main>
+            <Container>
+                    <Footer></Footer>
+                </Container>
         </div>
     );
 };

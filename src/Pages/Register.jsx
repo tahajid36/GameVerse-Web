@@ -75,22 +75,22 @@ const Register = () => {
     return (
         <div className='flex justify-center min-h-screen items-center'>
           <title>Register Now</title>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-6">
+        <div className="card border border-gray-500 w-full min-w-md max-w-sm shrink-0 shadow-2xl py-6">
          <h2 className='font-semibold text-2xl text-center'>Register</h2>
    <form onSubmit={handleRegister} className="card-body">
      <fieldset className="fieldset">
       {/* email field  */}
        <label className="label">Email</label>
-       <input name='email' type="email" className="input" placeholder="Email" required />
+       <input name='email' type="email" className="input w-full" placeholder="Email" required />
       {/* name field  */}
        <label className="label">First Name</label>
-       <input name='name' type="text" className="input" placeholder="First Name" required />
+       <input name='name' type="text" className="input w-full" placeholder="First Name" required />
        {/* Photo url field  */}
        <label className="label">Photo URL</label>
-       <input name='photourl' type="text" className="input" placeholder="Paste your photo url" required />
+       <input name='photourl' type="text" className="input w-full" placeholder="Paste your photo url" required />
        {/* password field  */}
        <label className="label">Password</label>
-       <input name='password' type="password" className="input" placeholder="Password" required />
+       <input name='password' type="password" className="input w-full" placeholder="Password" required />
     
        <p className="text-red-500">{error}</p>
        

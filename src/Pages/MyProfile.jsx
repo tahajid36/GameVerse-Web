@@ -11,9 +11,10 @@ const MyProfile = () => {
    
   return (
     <>
-      <Container>
+      
         <title>My Profile</title>
-        <div className="flex flex-col justify-center items-center gradient  min-h-screen">
+        <div className="flex flex-col justify-center items-center  
+       bg-linear-to-br from-black via-gray-900 to-red-900  min-h-screen">
         <div class="avatar mb-6">
             <div class="w-30 rounded-full">
               <img src={user.photoURL} />
@@ -35,7 +36,7 @@ const MyProfile = () => {
         
          
         </div>
-      </Container>
+    
     </>
   );
 };
