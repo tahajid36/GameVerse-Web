@@ -12,7 +12,6 @@ import ForgetPassword from "../Pages/ForgetPassword"
 import Loading from "../Pages/Loading"
 import Error from "../Components/Error"
 import UpdateProfile from "../Pages/UpdateProfile"
-import { Toaster } from "react-hot-toast"
 
 export const router = createBrowserRouter([
     {
@@ -71,7 +70,7 @@ export const router = createBrowserRouter([
                 Component: Register
             },
             {
-                path: '/auth/paswordreset',
+                path: '/auth/passwordreset',
                 Component: ForgetPassword
             }
         ]

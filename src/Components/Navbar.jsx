@@ -2,13 +2,11 @@ import React, { use } from "react";
 import logo from "../assets/ChatGPT Image Oct 22, 2025, 07_24_17 PM.png";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
 
 
 const Navbar = () => {
   const { user, SignOut } = use(AuthContext);
 
-  const notify = () => toast("User logged out succesfully")
 
   const handleSignOut = () => {
     SignOut()
@@ -94,7 +92,7 @@ const Navbar = () => {
             <Link
               to="/auth/login"
               onClick={()=>{
-                handleSignOut(), notify()
+                handleSignOut()
               }}
               className="btn dotmatrix text-red-600 btn-ghost join-item"
             >
@@ -110,26 +108,26 @@ const Navbar = () => {
           )}
 
           {user ? (
-            <div
+            <Link to='/myprofile'
               class="avatar"
              
             >
               <div class="w-11 rounded-full">
                 <img src={user.photoURL} />
               </div>
-            </div>
+            </Link>
           ) : (
-            <div
+            <Link to='/myprofile'
               class="avatar"
             >
               <div class="w-11 rounded-full" >
                 <img  src="https://imgs.search.brave.com/RmV4khtF4a4Ja2H1UBPz2TLXwGfiUcfUGh7ezE7rw7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZiL2E4/L2U0LzZiYThlNGU1/MjY4Zjg0YzM1MDdk/ZjcyZGM3ODk2ZDc3/LmpwZw" />
               </div>
-            </div>
+            </Link>
           )}
         </div>
       </div>
-      <ToastContainer></ToastContainer>
+      
     </div>
   );
 };

@@ -28,8 +28,8 @@ const GameCard = ({ game }) => {
     }}
     >
     <Link to={`/gamedetails/${id}`}>
-      <div className="gamecard p-6 h-[440px] bg-base-300 relative card  space-y-5">
-        <img className="w-full  mx-auto h-[320px]" src={coverPhoto} alt="" />
+      <div className="gamecard p-5  bg-base-300 relative card  space-y-5">
+        <img className="w-full   mx-auto h-[350px]" src={coverPhoto} alt="" />
         <div className="flex justify-between items-center">
           <div className="">
             <h2 className="text-lg font-semibold">{title}</h2>

@@ -12,6 +12,7 @@ const ForgetPassword = () => {
         resetPassword(email)
         .then(() => {
            //verification email sent to reset pass
+           window.open('https://mail.google.com')
         })
         .catch(error => {
           console.log(error.message)
@@ -38,11 +39,11 @@ const ForgetPassword = () => {
                     placeholder="Enter email address" required
                     
                   />
-                  <Link to='https://mail.google.com/mail/u/0/'>
-                  <button type='submit' className="btn btn-neutral mt-4 bg-linear-65 from-purple-500 to-pink-500">
+                  
+                  <button type='submit' className="w-full btn btn-neutral mt-4 bg-linear-65 from-purple-500 to-pink-500">
                     Reset Password
                   </button>
-                  </Link>
+                  
                   
                 </form>
 
