@@ -1,8 +1,8 @@
 
 
 
-# Welcome to GameVerse game Library 
-## Live url : [GameVerse BD](https://gregarious-paprenjak-2e480f.netlify.app/)
+# GameVerse game Library 
+
 
 Gameverse is a game library where you can find all of your desired favourite game titles it includes tons of popular game title's. Huge Collection inside one web. 
 
@@ -38,14 +38,27 @@ Update form includes:
  ### Error Page 
  it displays a error message showing Page not Found 
  Includes a button to navigate to the homepage
-
+ 
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- React
+- Firebase
+- Netlify
 
 ## Librarys Used
--Daisy ui 
--Tailwind css
--Framer Motion 
--React Router 
--React Marquee
+- Daisy ui 
+- Tailwind css
+- Framer Motion 
+- React Router 
+- React Marquee
+- React Toastify
+- React Icons
+- React Router
+- Google Fonts
+
+## Live url : [GameVerse BD](https://gregarious-paprenjak-2e480f.netlify.app/)
 
 
  
