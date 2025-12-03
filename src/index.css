@@ -2,20 +2,29 @@
 @plugin "daisyui";
 
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
+.stars{
+  background-image: url('./assets/stars.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed
+
+}
+p{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 
 .fugaz{
-  font-family: "Fugaz One", sans-serif;
-}
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
 .dotmatrix{
-  font-family: "Bitcount Grid Single", system-ui;
-  font-optical-sizing: auto;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0
 
 }
 .active{
@@ -29,35 +38,3 @@
   border: 2px solid maroon;
 }
 
-/* @property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.card::after, .card::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 10px;
-  animation: 3s spin linear infinite;
-}
-.card::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
-}
-@keyframes spin{
-  from{
-    --angle: 0deg;
-  }
-  to{
-    --angle: 360deg;
-  }
-} */

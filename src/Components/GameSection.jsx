@@ -10,7 +10,7 @@ const GameSection = () => {
     console.log(gameData)
     return (
         <>
-        <div className='bg-black'>
+        <div className='bg-black bg-cover stars'>
             <title>All Games</title>
         <Container>
             <Navbar></Navbar>

@@ -6,7 +6,7 @@ import Container from '../Components/Container';
 
 const MainLayout = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black stars bg-cover min-h-screen'>
             <Container>
             <Navbar></Navbar>
             </Container>

@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 
 const AuthLayout = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black '>
             <header>
                 <Container>
                 <Navbar></Navbar>
@@ -14,7 +14,7 @@ const AuthLayout = () => {
                 </Container>
                 
             </header>
-            <main className=' bg-linear-to-br from-black via-gray-900 to-red-900'>
+            <main className=' bg-cover stars'>
                 
                 <Outlet></Outlet>
 
