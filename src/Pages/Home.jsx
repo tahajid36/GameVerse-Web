@@ -16,14 +16,17 @@ const Home = () => {
     return (
         <div>
             <title>DashBoard</title>
+            <div className='mt-9'>
             <Slide></Slide>
+            </div>
+            
             <div>
-                <div className='bg-black/60 backdrop-blur-md w-5/10 mx-auto p-3 rounded-full mt-12'>
+                <div className='bg-black/60 backdrop-blur-md w-11/12 md:w-5/10 mx-auto p-3 rounded-full mt-12'>
                 <h2 className='text-5xl dotmatrix text-center   text-red-400'>TOP-RATED TITLES OF 2025</h2>
 
                 </div>
               
-                <div className='my-8 grid gap-5 grid-cols-1 md:grid-cols-4 w-9/12 mx-auto'>
+                <div className='my-8 grid gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 w-9/12 mx-auto'>
                    
                    {GameData.map(game=><GameCard game={game}></GameCard>)}
 

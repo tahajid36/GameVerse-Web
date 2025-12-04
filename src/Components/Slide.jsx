@@ -1,17 +1,58 @@
 import React from 'react';
-import Marquee from 'react-fast-marquee';
+import { Pagination, Navigation } from 'swiper/modules';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
 const Slide = () => {
     return (
-        <div className='mt-10'>
-            <Marquee className='' speed={90}>
-                <img src="https://imgs.search.brave.com/5vbhttmhF0eRKSmmldg-elH33ePbJfW-HCIWsXYReGo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy85ODcyNjIy/LWd0YS12aS00ay13/YWxscGFwZXIuanBn" alt="" className='w-200 h-110' />
-                <img src="https://4kwallpapers.com/images/walls/thumbs_3t/23275.jpg" alt="" className='w-200 h-110' />
-                <img src="https://wallpapercave.com/wp/wp4011939.jpg" alt="" className='w-200 h-110' />
-                <img src="https://images4.alphacoders.com/115/thumbbig-1151249.webp" alt="" className='w-200 h-110' />
-            </Marquee>
+        <>
+        <div className='mx-auto w-full md:w-3/4 lg:w-3/5 max-w-4xl'>
+        <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[ Navigation, Pagination]}
+        className="mySwiper"
+        >
+             <SwiperSlide><img src="https://wallpapercave.com/wp/wp15113361.webp" alt=""  /></SwiperSlide>
+        <SwiperSlide> <img src="https://wallpapercave.com/wp/wp4011939.jpg" alt=""  /></SwiperSlide>
+        <SwiperSlide><img src="https://wallpapercave.com/wp/Zlxkx5r.jpg" alt=""  /></SwiperSlide>
+
+        </Swiper>
+        
+         
+            
+
+          
+           
+               
+            
+          
+            
+          
+    
         </div>
+        
+        
+        
+        
+        </>
+        
     );
 };
 
 export default Slide;
+
+
+
+                // 
+                // <img src="https://4kwallpapers.com/images/walls/thumbs_3t/23275.jpg" alt="" className='w-200 h-110' />
+                // <img src="https://wallpapercave.com/wp/wp4011939.jpg" alt="" className='w-200 h-110' />
+                // <img src="https://images4.alphacoders.com/115/thumbbig-1151249.webp" alt="" className='w-200 h-110' />
+            
