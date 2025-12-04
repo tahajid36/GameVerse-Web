@@ -19,7 +19,7 @@ const Home = () => {
             <Slide></Slide>
             <div>
                 <div className='bg-black/60 backdrop-blur-md w-5/10 mx-auto p-3 rounded-full mt-12'>
-                <h2 className='text-5xl dotmatrix text-center   text-red-600'>TOP-RATED TITLES OF 2025</h2>
+                <h2 className='text-5xl dotmatrix text-center   text-red-400'>TOP-RATED TITLES OF 2025</h2>
 
                 </div>
               
@@ -30,7 +30,7 @@ const Home = () => {
                </div>
                
                 <div className='flex justify-center items-center'>
-                <Link to={'/gamessection'}><button className='btn btn-outline hover:bg-linear-65 from-purple-500 to-pink-500'>Browse All Games</button></Link>
+                <Link to={'/gamessection'}><button className='btn btn-outline hover:bg-linear-65 from-purple-500 to-red-400'>Browse All Games</button></Link>
 
                 </div>
 

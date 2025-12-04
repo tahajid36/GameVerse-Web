@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/ChatGPT Image Oct 22, 2025, 07_24_17 PM.png";
 
 const Footer = () => {
   return (
@@ -8,6 +9,11 @@ const Footer = () => {
             text-white
             shadow-inner shadow-cyan-900/50  rounded p-10"
       >
+        <div>
+          <img className="w-40" src={logo} alt="" />
+          <h2 className="text-4xl font-bold text-white"><span className="text-red-400">GameVerse</span> BD</h2>
+
+        </div>
         <hr className="" />
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>

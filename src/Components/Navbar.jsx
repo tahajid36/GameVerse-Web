@@ -62,11 +62,21 @@ const Navbar = () => {
                   <a>All Games</a>
                 </li>
               </NavLink>
-              {user && (<NavLink to={"/myprofile"}>
+              <NavLink to={"/aboutus"}>
                 <li>
-                  <a>My Profile</a>
+                  <a>About Us</a>
                 </li>
-              </NavLink>)}
+              </NavLink>
+              {user && (<NavLink to={"/myprofile"}>
+              <li>
+                <a>My Profile</a>
+              </li>
+            </NavLink>)}
+              <NavLink to={"/support"}>
+              <li>
+                <a>Support</a>
+              </li>
+            </NavLink>
             </ul>
           </div>
           <img className="h-15 w-15" src={logo} alt="" />
@@ -84,9 +94,19 @@ const Navbar = () => {
                 <a>All Games</a>
               </li>
             </NavLink>
-            <NavLink to={"/myprofile"}>
+            {user && (<NavLink to={"/myprofile"}>
               <li>
                 <a>My Profile</a>
+              </li>
+            </NavLink>)}
+            <NavLink to={"/aboutus"}>
+              <li>
+                <a>About Us</a>
+              </li>
+            </NavLink>
+            <NavLink to={"/support"}>
+              <li>
+                <a>Support</a>
               </li>
             </NavLink>
           </ul>

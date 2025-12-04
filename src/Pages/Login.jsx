@@ -46,7 +46,7 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center min-h-screen items-center
+    <div className="flex justify-center min-h-screen items-center bg-black/60 backdrop-blur-md
     ">
       <title>Login Now</title>
       <div className="card border border-gray-500 w-full min-w-md max-w-sm shrink-0 shadow-2xl py-6">
