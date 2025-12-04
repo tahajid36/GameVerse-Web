@@ -59,7 +59,7 @@ Update form includes:
 - React Router
 - Google Fonts
 
-## Live url : [GameVerse BD](https://gregarious-paprenjak-2e480f.netlify.app/)
+## Live url : [GameVerse BD](https://gameverse98.netlify.app/)
 
 ```bash
 # Clone the repository
