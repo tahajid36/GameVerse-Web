@@ -1,8 +1,9 @@
 
 
 
-# Welcome to GameVerse game Library 
-## Live url : [GameVerse BD](https://gregarious-paprenjak-2e480f.netlify.app/)
+# GameVerse game Library 
+<img width="1919" height="922" alt="image" src="https://github.com/user-attachments/assets/2486e88b-59e7-44ff-8cad-645df2dee5cf" />
+
 
 Gameverse is a game library where you can find all of your desired favourite game titles it includes tons of popular game title's. Huge Collection inside one web. 
 
@@ -38,14 +39,37 @@ Update form includes:
  ### Error Page 
  it displays a error message showing Page not Found 
  Includes a button to navigate to the homepage
-
+ 
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- React
+- Firebase
+- Netlify
 
 ## Librarys Used
--Daisy ui 
--Tailwind css
--Framer Motion 
--React Router 
--React Marquee
+- Daisy ui 
+- Tailwind css
+- Framer Motion 
+- React Router 
+- React Marquee
+- React Toastify
+- React Icons
+- React Router
+- Google Fonts
+
+## Live url : [GameVerse BD](https://gregarious-paprenjak-2e480f.netlify.app/)
+
+```bash
+# Clone the repository
+git clone https://github.com/tahajid36/GameVerse-Web.git
+
+# Navigate to the project folder
+cd GameVerse-Web
+
+# Open index.html in your browser
+# You can double-click index.html or serve using Live Server in VSCode
 
 
  
