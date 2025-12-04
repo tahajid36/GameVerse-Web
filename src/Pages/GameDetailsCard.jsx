@@ -5,7 +5,6 @@ const GameDetailsCard = ({ gameData }) => {
   const { title, description, downloadLink, category, coverPhoto } = gameData;
   return (
     <div className="flex justify-center mx-auto py-12 px-6">
-      {/* 🔑 CHANGE 1: Increased max-w-6xl to max-w-7xl for a wider card */}
       <div
         className="flex flex-col md:flex-row gap-11 w-full max-w-9xl p-8 rounded-2xl 
                   bg-black/60 backdrop-blur-md border border-white/10 shadow-2xl shadow-cyan-900/50"

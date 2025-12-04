@@ -21,7 +21,7 @@ const UpdateProfile = () => {
     <>
       
         <title>Update Profile</title>
-        <div className="flex flex-col justify-center bg-linear-to-br from-black via-gray-900 to-red-900   items-center   min-h-screen">
+        <div className="flex flex-col mt-[80px] justify-center w-8/11 mx-auto rounded-3xl bg-black/60 backdrop-blur-md  items-center   min-h-screen">
           <div class="avatar mb-6">
             <div class="w-30 rounded-full">
               <img src={user.photoURL} />

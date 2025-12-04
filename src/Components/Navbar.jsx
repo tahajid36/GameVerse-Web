@@ -3,24 +3,29 @@ import logo from "../assets/ChatGPT Image Oct 22, 2025, 07_24_17 PM.png";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../Auth/AuthProvider";
 
-
 const Navbar = () => {
   const { user, SignOut } = use(AuthContext);
 
+  const links = (
+    <>
+      <Link to={"/myprofile"}>
+        <li>
+          <a>My Profile</a>
+        </li>
+      </Link>
+    </>
+  );
 
   const handleSignOut = () => {
     SignOut()
-      .then(() => {
-
-      })
+      .then(() => {})
       .catch((error) => {
         console.log(error.message);
-        
       });
   };
 
   return (
-    <div className="">
+    <div className="bg-black/60 backdrop-blur-md sticky top-0 z-50">
       <div className="navbar flex md:justify-around justify-between ">
         {/* navbar start div  */}
         <div className="flex ">
@@ -57,11 +62,11 @@ const Navbar = () => {
                   <a>All Games</a>
                 </li>
               </NavLink>
-              <NavLink to={"/myprofile"}>
+              {user && (<NavLink to={"/myprofile"}>
                 <li>
                   <a>My Profile</a>
                 </li>
-              </NavLink>
+              </NavLink>)}
             </ul>
           </div>
           <img className="h-15 w-15" src={logo} alt="" />
@@ -91,8 +96,8 @@ const Navbar = () => {
           {user ? (
             <Link
               to="/auth/login"
-              onClick={()=>{
-                handleSignOut()
+              onClick={() => {
+                handleSignOut();
               }}
               className="btn dotmatrix text-red-600 btn-ghost join-item"
             >
@@ -108,26 +113,20 @@ const Navbar = () => {
           )}
 
           {user ? (
-            <Link to='/myprofile'
-              class="avatar"
-             
-            >
+            <Link to="/myprofile" class="avatar">
               <div class="w-11 rounded-full">
                 <img src={user.photoURL} />
               </div>
             </Link>
           ) : (
-            <Link to='/myprofile'
-              class="avatar"
-            >
-              <div class="w-11 rounded-full" >
-                <img  src="https://imgs.search.brave.com/RmV4khtF4a4Ja2H1UBPz2TLXwGfiUcfUGh7ezE7rw7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZiL2E4/L2U0LzZiYThlNGU1/MjY4Zjg0YzM1MDdk/ZjcyZGM3ODk2ZDc3/LmpwZw" />
+            <Link to="/myprofile" class="avatar">
+              <div class="w-11 rounded-full">
+                <img src="https://imgs.search.brave.com/RmV4khtF4a4Ja2H1UBPz2TLXwGfiUcfUGh7ezE7rw7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZiL2E4/L2U0LzZiYThlNGU1/MjY4Zjg0YzM1MDdk/ZjcyZGM3ODk2ZDc3/LmpwZw" />
               </div>
             </Link>
           )}
         </div>
       </div>
-      
     </div>
   );
 };

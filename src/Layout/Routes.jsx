@@ -52,9 +52,9 @@ export const router = createBrowserRouter([
     },
     {
         path: '/gamessection',
-        element: <PrivateRoute>
+        element: 
             <GameSection></GameSection>
-        </PrivateRoute>,
+        ,
         loader: ()=> fetch('/gameInfo.json')    
     },
     

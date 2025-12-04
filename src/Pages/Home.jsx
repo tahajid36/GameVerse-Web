@@ -18,9 +18,12 @@ const Home = () => {
             <title>DashBoard</title>
             <Slide></Slide>
             <div>
-                <h2 className='text-5xl dotmatrix text-center mt-12  text-red-600'>TOP-RATED TITLES OF 2025</h2>
+                <div className='bg-black/60 backdrop-blur-md w-5/10 mx-auto p-3 rounded-full mt-12'>
+                <h2 className='text-5xl dotmatrix text-center   text-red-600'>TOP-RATED TITLES OF 2025</h2>
+
+                </div>
               
-                <div className='my-8  grid gap-9 grid-cols-1 md:grid-cols-4 container mx-auto'>
+                <div className='my-8 grid gap-5 grid-cols-1 md:grid-cols-4 w-9/12 mx-auto'>
                    
                    {GameData.map(game=><GameCard game={game}></GameCard>)}
 

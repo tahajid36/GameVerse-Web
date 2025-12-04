@@ -13,8 +13,8 @@ const MyProfile = () => {
     <>
       
         <title>My Profile</title>
-        <div className="flex flex-col justify-center items-center  
-       bg-linear-to-br from-black via-gray-900 to-red-900  min-h-screen">
+        <div className="flex flex-col mt-[80px] rounded-3xl justify-center items-center  bg-black/60 backdrop-blur-md 
+       w-8/11 mx-auto min-h-screen">
         <div class="avatar mb-6">
             <div class="w-30 rounded-full">
               <img src={user.photoURL} />

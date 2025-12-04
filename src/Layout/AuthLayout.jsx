@@ -8,10 +8,10 @@ const AuthLayout = () => {
     return (
         <div className='bg-black '>
             <header>
-                <Container>
+                
                 <Navbar></Navbar>
 
-                </Container>
+                
                 
             </header>
             <main className=' bg-cover stars'>
